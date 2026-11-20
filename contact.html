@@ -1,0 +1,238 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="Get in touch with Maincrafts Technology. Submit your inquiry, contact our admissions desk, or locate our tech hub in Noida.">
+    <meta name="keywords" content="Contact Maincrafts Tech, Apply Tech Internship, Contact Support, Noida Office Location">
+    <meta name="author" content="Maincrafts Technology">
+    
+    <title>Contact Us | Maincrafts Technology</title>
+    
+    <!-- Font Awesome Icons -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+    <!-- Main Stylesheet -->
+    <link rel="stylesheet" href="css/style.css">
+</head>
+<body>
+
+    <!-- STICKY HEADER -->
+    <header id="mainHeader">
+        <div class="container navbar">
+            <a href="index.html" class="logo" id="logoLink">
+                <i class="fa-solid fa-cubes logo-icon"></i>
+                <span>Maincrafts</span>
+            </a>
+            
+            <nav class="nav-menu" id="navMenu">
+                <a href="index.html" class="nav-link" id="homeNavLink">Home</a>
+                <a href="about.html" class="nav-link" id="aboutNavLink">About</a>
+                <a href="contact.html" class="nav-link active" id="contactNavLink">Contact</a>
+                <div class="nav-cta">
+                    <a href="contact.html" class="btn btn-primary" id="headerCtaBtn">Apply Now</a>
+                </div>
+            </nav>
+            
+            <button class="hamburger" id="hamburgerToggle" aria-label="Toggle navigation menu">
+                <span></span>
+                <span></span>
+                <span></span>
+            </button>
+        </div>
+    </header>
+
+    <!-- INNER HERO / BREADCRUMBS BANNER -->
+    <section class="inner-hero" id="innerHeroSection">
+        <div class="container">
+            <h1 class="text-gradient">Contact Us</h1>
+            <p>Have questions? Reach out to our admissions team or apply for internships.</p>
+            <div class="breadcrumbs">
+                <a href="index.html">Home</a>
+                <i class="fa-solid fa-chevron-right"></i>
+                <span class="text-cyan">Contact Us</span>
+            </div>
+        </div>
+    </section>
+
+    <!-- CONTACT GRID SECTION -->
+    <section class="section-padding" id="contactSection">
+        <div class="container">
+            <div class="contact-grid">
+                
+                <!-- Left: Contact Details Cards -->
+                <div class="contact-info-cards fade-in-up">
+                    
+                    <!-- Card 1: Email -->
+                    <div class="contact-info-card glass-card" id="contactMailCard">
+                        <i class="fa-solid fa-envelope"></i>
+                        <div class="contact-info-text">
+                            <h4>Email Support</h4>
+                            <p>admissions@maincrafts.com</p>
+                            <p>info@maincrafts.com</p>
+                        </div>
+                    </div>
+
+                    <!-- Card 2: Phone -->
+                    <div class="contact-info-card glass-card" id="contactPhoneCard">
+                        <i class="fa-solid fa-phone"></i>
+                        <div class="contact-info-text">
+                            <h4>Call/WhatsApp</h4>
+                            <p>+91 98765 43210</p>
+                            <p>+91 120 456 7890</p>
+                        </div>
+                    </div>
+
+                    <!-- Card 3: Address -->
+                    <div class="contact-info-card glass-card" id="contactAddressCard">
+                        <i class="fa-solid fa-location-dot"></i>
+                        <div class="contact-info-text">
+                            <h4>Corporate Office</h4>
+                            <p>Tech HUB Arcade, 4th Floor,</p>
+                            <p>Sector 62, Noida, UP, India</p>
+                        </div>
+                    </div>
+
+                    <!-- Card 4: Hours -->
+                    <div class="contact-info-card glass-card" id="contactHoursCard">
+                        <i class="fa-solid fa-clock"></i>
+                        <div class="contact-info-text">
+                            <h4>Operating Hours</h4>
+                            <p>Monday - Saturday</p>
+                            <p>09:00 AM - 06:00 PM IST</p>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Right: Contact/Application Form -->
+                <div class="contact-form-wrapper glass-card fade-in-up delay-1">
+                    <form class="contact-form" id="contactForm" novalidate>
+                        <h3>Send an Inquiry</h3>
+                        <p>Fill out the application fields below and our tech counselors will coordinate within 24 hours.</p>
+                        
+                        <!-- Success Banner -->
+                        <div class="form-success-banner" id="formSuccessBanner">
+                            <i class="fa-solid fa-circle-check"></i>
+                            <span>Your inquiry has been successfully sent! We will connect soon.</span>
+                        </div>
+
+                        <!-- Name Input -->
+                        <div class="form-group">
+                            <label for="name" class="form-label">Full Name</label>
+                            <input type="text" id="name" class="form-control" placeholder="Enter your full name" autocomplete="name">
+                            <div class="form-error" id="nameError">Name cannot be empty.</div>
+                        </div>
+
+                        <!-- Email Input -->
+                        <div class="form-group">
+                            <label for="email" class="form-label">Email Address</label>
+                            <input type="email" id="email" class="form-control" placeholder="username@domain.com" autocomplete="email">
+                            <div class="form-error" id="emailError">Please enter a valid email address.</div>
+                        </div>
+
+                        <!-- Select Domain -->
+                        <div class="form-group">
+                            <label for="domainSelect" class="form-label">Select Internship Domain</label>
+                            <select id="domainSelect" class="form-control">
+                                <option value="general" selected>General/Inquiry</option>
+                                <option value="fullstack">Full Stack Development</option>
+                                <option value="aiml">AI & Machine Learning</option>
+                                <option value="datascience">Data Science & Analytics</option>
+                                <option value="cybersec">Cyber Security & Ethical Hacking</option>
+                                <option value="cloud">Cloud Computing & DevOps</option>
+                                <option value="uiux">UI/UX Product Design</option>
+                            </select>
+                        </div>
+
+                        <!-- Message Input -->
+                        <div class="form-group">
+                            <label for="message" class="form-label">Your Message</label>
+                            <textarea id="message" rows="5" class="form-control" placeholder="How can we help you? Describe your requirement..."></textarea>
+                            <div class="form-error" id="messageError">Message cannot be empty.</div>
+                        </div>
+
+                        <button type="submit" class="btn btn-primary" style="width: 100%; border-radius: var(--border-radius-sm);" id="formSubmitBtn">
+                            Submit Inquiry <i class="fa-solid fa-paper-plane" style="margin-left: 0.5rem;"></i>
+                        </button>
+                    </form>
+                </div>
+            </div>
+
+            <!-- Styled Google Map Placeholder -->
+            <div class="map-container fade-in-up" id="googleMapSection">
+                <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3502.4332906103657!2d77.36224157577573!3d28.616781275674315!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x390ce549da4593cb%3A0xc39f8f2b7f0e74f8!2sSector%2062%2C%20Noida%2C%20Uttar%20Pradesh!5e0!3m2!1sen!2sin!4v1719232356543!5m2!1sen!2sin" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade" title="Maincrafts Noida Sector 62 Office Location Map"></iframe>
+            </div>
+        </div>
+    </section>
+
+    <!-- FOOTER -->
+    <footer id="mainFooter">
+        <div class="container footer-grid">
+            <div class="footer-brand" id="footerBrand">
+                <a href="index.html" class="logo">
+                    <i class="fa-solid fa-cubes logo-icon"></i>
+                    <span>Maincrafts</span>
+                </a>
+                <p>Empowering the next generation of software developers and engineers with industry-aligned skills, practical training, and verified certificates.</p>
+                <div class="social-links">
+                    <a href="https://linkedin.com" target="_blank" rel="noopener noreferrer" class="social-link" aria-label="LinkedIn Profile"><i class="fa-brands fa-linkedin-in"></i></a>
+                    <a href="https://github.com" target="_blank" rel="noopener noreferrer" class="social-link" aria-label="GitHub Profile"><i class="fa-brands fa-github"></i></a>
+                    <a href="https://twitter.com" target="_blank" rel="noopener noreferrer" class="social-link" aria-label="Twitter Profile"><i class="fa-brands fa-x-twitter"></i></a>
+                    <a href="https://youtube.com" target="_blank" rel="noopener noreferrer" class="social-link" aria-label="YouTube Channel"><i class="fa-brands fa-youtube"></i></a>
+                </div>
+            </div>
+            
+            <div class="footer-links" id="footerQuickLinks">
+                <h4>Quick Links</h4>
+                <ul>
+                    <li><a href="index.html">Home</a></li>
+                    <li><a href="about.html">About Us</a></li>
+                    <li><a href="contact.html">Contact Us</a></li>
+                    <li><a href="index.html#domainsSection">Internship Tracks</a></li>
+                </ul>
+            </div>
+            
+            <div class="footer-links" id="footerDomains">
+                <h4>Internship Tracks</h4>
+                <ul>
+                    <li><a href="contact.html?domain=fullstack">Full Stack</a></li>
+                    <li><a href="contact.html?domain=aiml">AI & Machine Learning</a></li>
+                    <li><a href="contact.html?domain=datascience">Data Science</a></li>
+                    <li><a href="contact.html?domain=cybersec">Cyber Security</a></li>
+                </ul>
+            </div>
+            
+            <div class="footer-links" id="footerContactInfo">
+                <h4>Contact Info</h4>
+                <ul class="footer-contact-info">
+                    <li>
+                        <i class="fa-solid fa-location-dot"></i>
+                        <span>Tech HUB Arcade, 4th Floor, Sector 62, Noida, India</span>
+                    </li>
+                    <li>
+                        <i class="fa-solid fa-envelope"></i>
+                        <span>admissions@maincrafts.com</span>
+                    </li>
+                    <li>
+                        <i class="fa-solid fa-phone"></i>
+                        <span>+91 98765 43210</span>
+                    </li>
+                </ul>
+            </div>
+        </div>
+        
+        <div class="container footer-bottom">
+            <p>&copy; 2026 Maincrafts Technology. All rights reserved.</p>
+            <div class="footer-bottom-links">
+                <a href="#">Privacy Policy</a>
+                <a href="#">Terms of Service</a>
+            </div>
+        </div>
+    </footer>
+
+    <!-- BACK TO TOP BUTTON -->
+    <button class="back-to-top" id="backToTop" aria-label="Back to Top"><i class="fa-solid fa-arrow-up"></i></button>
+
+    <!-- App Script -->
+    <script src="js/script.js"></script>
+</body>
+</html>
